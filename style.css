@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 20px 10%;
+ 
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    color: #684781;
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color: rgb(81, 183, 224) ;
+}
+
+.home{
+    height: 100vh;
+    background: linear-gradient( #0b2869  66%, white 34%) ;
+    display:flex ;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-image{
+    width: 500px;
+    height:500px;
+    background: green;
+    border-radius: 50%;
+    background-color:  #0b2869;
+    border: 25px solid #00abf0;
+    outline: 15px solid#031540;
+}
+.home-image img{
+    position: relative;
+    max-block-size: 300px;
+    top:76px;
+    left:76px;
+   
+}
+
+.home-content{
+    max-width: 600px;
+    color: white;
+    text-align: right;
+}
+
+.home-content h1{
+    font-size: 51px;
+}
+.home-content h3{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke:.5px #fff;
+    background-image: linear-gradient(#00abf0,#00abf0);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation:animateText 6s linear infinite;
+}
+
+@keyframes animateText{
+    0%,95%,100%{
+        background-position:-410px 0;
+    }
+    65%,85%{
+        background-position:0 0;
+    }
+}
+
+.home-content p{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.home-sci{
+    margin: 10px 0 40px;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.home-sci a:hover{
+    background: #00abf0;
+    color:#fff;
+    border-color: #00abf0;
+    box-shadow:0 0 10px #00abf0;
+}
+
+.button{
+    padding: 12px 35px;
+    background-color: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration:none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    transition: .5s;
+}
+
+.button:hover{
+    box-shadow: none;
+}
